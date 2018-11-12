@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:id="@+id/viewModifyScore_linear_title"
+    	android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:layout_margin="5dp"
+    	android:orientation="horizontal"
+    	>
+    
+	    <TextView 
+	        android:id="@+id/viewScore_tv_num"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="15sp"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        />
+		
+	    <TextView
+	        android:id="@+id/viewScore_tv_name"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="15sp"
+			android:layout_marginLeft="10dp"  
+			android:gravity="center"  
+			android:paddingRight="10dp"    
+	        />
+	    
+	    <TextView
+	        android:id="@+id/viewScore_tv_score"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="15sp"
+			android:layout_marginLeft="10dp"  
+			android:gravity="center"  
+			android:paddingRight="10dp"    
+	        />
+	    
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/viewModifyScore_divider"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:background="#D1D1D1"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+	   	/>
+
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+	    >
+	    
+	   <Switch
+	       android:id="@+id/viewScore_et_scoreSwitch"
+	       android:layout_width="wrap_content"
+	       android:layout_height="match_parent"
+	       android:layout_gravity="center"
+	       android:checked="true"
+	       android:textOff="减"
+	       android:textOn="加" 
+	       android:layout_marginRight="10dp"/>
+	   	
+	   <EditText
+	       android:id="@+id/viewScore_et_add"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:textSize="15sp"
+	       android:hint="1"
+	       android:ellipsize="end"
+	       android:gravity="center"
+	       />
+	   
+	   	<TextView
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="18sp"
+			android:layout_marginLeft="10dp"  
+			android:gravity="center"  
+			android:paddingRight="10dp"    
+			android:text="分 "
+	        />
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/viewModifyScore_divider2"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:background="#D1D1D1"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+	   	/>
+	
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:visibility="gone"
+	    >
+	    
+	   <TextView
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="18sp"
+			android:layout_marginLeft="10dp"  
+			android:gravity="center"  
+			android:paddingRight="10dp"    
+			android:text="修改 - "
+	        />
+	   
+	   <EditText
+	       android:id="@+id/viewScore_et_modify"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:textSize="15sp"
+	       android:hint="1"
+	       android:ellipsize="end"
+	       android:gravity="center"
+	       />
+	   
+	   	<TextView
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textSize="18sp"
+			android:layout_marginLeft="10dp"  
+			android:gravity="center"  
+			android:paddingRight="10dp"    
+			android:text="分 "
+	        />
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/viewModifyScore_divider3"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:background="#D1D1D1"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:visibility="gone"
+	   	/>
+	
+	 <LinearLayout 
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_marginLeft="5dp"
+	   android:layout_marginRight="5dp"
+	   android:layout_marginBottom="5dp"
+       >
+       
+       <Button
+	       android:id="@+id/viewScore_btn_confirm"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:text="确认"
+	       android:alpha="0.7"
+	       android:textSize="18sp"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginLeft="10dp"
+       	   />
+       
+       <Button
+	       android:id="@+id/viewScore_btn_cancel"
+	       android:layout_height="wrap_content"
+	       android:layout_width="0dp"
+	       android:layout_weight="1"
+	       android:text="取消"
+	       android:alpha="0.7"
+	       android:textSize="18sp"
+	       android:layout_marginRight="10dp"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginBottom="10dp"
+       	   />
+       
+   </LinearLayout>	
+</LinearLayout>

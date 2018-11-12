@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simplebasketballscore.activity.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/acMain_linear_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="#D1D1D1" >
+
+        <TextView
+            android:id="@+id/acMain_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="比赛设置"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/acMain_iv_start"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ok" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/acMain_linear_teamGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acMain_linear_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/acMain_linear_teamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/acMain_tv_guideTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="输入队名A"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/acMain_et_teamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acMain_linear_teamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/acMain_tv_guideTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="输入队名B"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/acMain_et_teamB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acMain_tv_guide2or4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acMain_linear_teamGroup"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="两节or四节"
+        android:textSize="15sp" 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/acMain_cb_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/acMain_tv_guide2or4"
+        android:layout_alignBottom="@+id/acMain_tv_guide2or4"
+        android:text="两节" 
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/acMain_tv_guide2or4"
+        android:checked="true"
+        />
+    
+     <CheckBox
+        android:id="@+id/acMain_cb_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/acMain_tv_guide2or4"
+        android:layout_alignBaseline="@+id/acMain_tv_guide2or4"
+        android:text="四节"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/acMain_cb_two"
+        />
+     
+    <TextView
+        android:id="@+id/acMain_tv_perTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/acMain_et_perTime"
+        android:layout_below="@id/acMain_tv_guide2or4"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="每节时间"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/acMain_tv_guideTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/acMain_et_perTime"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/acMain_tv_guide2or4"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="min"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/acMain_et_perTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acMain_tv_guide2or4"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/acMain_tv_guideTime"
+        android:layout_toRightOf="@id/acMain_tv_perTime"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/acMain_tv_loginPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acMain_et_perTime"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="录入球员"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/acMain_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/acMain_tv_loginPlayers"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#D1D1D1" />
+
+    <LinearLayout
+        android:id="@+id/acMain_linear_playerSet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/acMain_view_divider"
+        android:divider="@drawable/divider_shape_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:showDividers="middle" >
+
+        <LinearLayout
+            android:id="@+id/acMain_linear_playerA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/acMain_iv_addPlayerA"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_player" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#D1D1D1" />
+
+            <ListView
+                android:id="@+id/acMain_list_playerA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/acMain_linear_playerB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/acMain_iv_addPlayerB"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_player" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#D1D1D1" />
+
+            <ListView
+                android:id="@+id/acMain_list_playerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

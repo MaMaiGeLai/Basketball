@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0_a6aea8af699f35ae4d29b40dceceee4346c417a0.jar" />
+    </item>
+    <item
+        jar="C:\Users\60110\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.2\2bf96b7aa8b611c177d329452af1dc933e14501c\commons-cli-1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\commons-cli-1.2_4daa37dd44012219bf2932899ff8241e827c82b5.jar" />
+    </item>
+    <item
+        jar="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-20.0.0_aedf14e8f2aa20b6baaf877ef3fa3cad93be16b0.jar" />
+    </item>
+    <item
+        jar="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-20.0.0_d8a0ae4d99900eab0d7f871e78291a72e7c76c9c.jar" />
+    </item>
+    <item
+        jar="C:\Users\60110\.gradle\caches\modules-2\files-2.1\com.facebook.stetho\stetho\1.0.1\1a30a909633fc011e36a3b33be934deadd0fecbc\stetho-1.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a30a909633fc011e36a3b33be934deadd0fecbc">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\stetho-1.0.1_fe71d64b3d0e91f9a6b788017c0532eec46cc06c.jar" />
+    </item>
+    <item
+        jar="C:\Users\60110\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\jsr305-2.0.1_b771016b8de7f509073bdafd8b27400aca20d1f3.jar" />
+    </item>
+    <item
+        jar="C:\Users\60110\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="G:\BasketballScorer-master\BasketballScorer-master\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0_638467f41615eb0e38163055f43c84c7a6c3cd03.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="5dp">
+    
+    <TextView 
+        android:id="@+id/adPlayer_tv_num"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+	
+    <TextView
+        android:id="@+id/adPlayer_tv_name"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+		android:layout_toRightOf="@id/adPlayer_tv_num"
+		android:layout_marginLeft="10dp"  
+		android:gravity="center_vertical"      
+        />
+    
+    <com.example.simplebasketballscore.view.MyImageView
+        android:id="@+id/adPlayer_iv_edit"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/menu"
+        android:scaleType="fitCenter"
+        />
+    
+</RelativeLayout>
